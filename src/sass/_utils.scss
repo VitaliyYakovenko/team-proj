@@ -1,0 +1,31 @@
+body {
+    font-size: 14px;
+    font-weight: 400;
+    // font-family: 'Inter', sans-serif;
+    // font-family: 'Kalam', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: $main-text-color;
+    background-color: $bg-main-color;
+}
+
+.list {
+   list-style: none;
+}
+ul {
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;    
+}

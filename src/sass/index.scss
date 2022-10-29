@@ -1,2 +1,10 @@
-@import './common';
-@import './example';
+// @import './common';
+
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700;900&display=swap');
+@import "./vars"; 
+// не перемещать!
+@import "./utils";
+// не перемещать!
+
+
