@@ -1,22 +1,22 @@
 body {
-    font-size: 14px;
-    font-weight: 400;
-    // font-family: 'Inter', sans-serif;
-    // font-family: 'Kalam', cursive;
-    font-family: 'Roboto', sans-serif;
-    color: $main-text-color;
-    background-color: $bg-main-color;
+  font-size: 14px;
+  font-weight: 400;
+  // font-family: 'Inter', sans-serif;
+  // font-family: 'Kalam', cursive;
+  font-family: 'Roboto', sans-serif;
+  color: $main-text-color;
+  background-color: $bg-main-color;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 .list {
-   list-style: none;
+  list-style: none;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 h1,
@@ -24,30 +24,29 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;    
+  display: block;
+  max-width: 100%;
 }
 
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-    @media  screen and (min-width: 480px) {
-      width: 480px;
-    }
-    @media  screen and (min-width: 768px) {
-      width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 1248px;
-      padding-left: 16px;
-      padding-right: 16px;      
-    }
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
- 
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1248px;
+  //   padding-left: 16px;
+  //   padding-right: 16px;
+  // }
+}
