@@ -109,6 +109,9 @@ header {
 .header__link {
   color: #000000;
 }
+.header__link:hover, .header__link:focus {
+  color: #BBF330;
+}
 
 .header__btn {
   border: none;
