@@ -8,15 +8,17 @@ body {
     background-color: $bg-main-color;
 }
 
-.list {
-   list-style: none;
-}
-ul {
-    padding: 0;
-}
 .link {
     text-decoration: none;
 }
+.list {
+   list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -29,3 +31,23 @@ img {
     display: block;
     max-width: 100%;    
 }
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    @media  screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media  screen and (min-width: 768px) {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1248px;
+      padding-left: 16px;
+      padding-right: 16px;      
+    }
+  }
+ 
