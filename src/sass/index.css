@@ -243,3 +243,129 @@ header {
   line-height: 1.18;
   color: #000000;
 }
+
+
+
+
+
+
+
+.favorites {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F5F5F5;
+}
+@media screen and (min-width: 768px) {
+  .favorites {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.favorites-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .favorites-title {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+
+.favorites-text {
+  margin-bottom: 60px;
+  line-height: 1.14;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .favorites-text {
+    font-size: 16px;
+    line-height: 1.18;
+  }
+}
+
+.favorites-list {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px;
+  }
+}
+
+.favorites-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .favorites-item {
+    margin-bottom: 20px;
+  }
+  .favorites-item:nth-child(n+4) {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .favorites-item {
+    margin: 16px;
+    flex-basis: calc((100% - 64px) / 2);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .favorites-item {
+    flex-basis: calc((100% - 96px) / 3);
+  }
+}
+
+.favorites-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 282px;
+  border-radius: 50%;
+  border: 11px solid #FFE550;
+  background-color: #FEFEFE;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .favorites-image-wrap {
+    width: 336px;
+    height: 338px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .favorites-image-wrap {
+    width: 394px;
+    height: 397px;
+  }
+}
+.favorites-image-wrap:hover {
+  border: 11px solid #BBF330;
+}
+.favorites-image-wrap:focus {
+  border: 11px solid #BBF330;
+}
+
+.favorites-image-wrap img {
+  width: 224px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .favorites-image-wrap img {
+    width: 268px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .favorites-image-wrap img {
+    width: 315px;
+  }
+}/*# sourceMappingURL=index.css.map */
