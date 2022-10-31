@@ -6,5 +6,10 @@
 // не перемещать!
 @import './utils/utils';
 // не перемещать!
-@import './header';
+
+@import './components/header';
+
+@import "./components/mob-menu";
+
+@import "./favorites";
 

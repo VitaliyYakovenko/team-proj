@@ -15,6 +15,11 @@ header {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  @media screen and (max-width: 1279px) {
+    justify-content: space-between;
+  }
+
   @media screen and (min-width: 1280px) {
     width: 1280px;
     padding-left: 16px;
@@ -33,13 +38,12 @@ header {
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 180px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 735px;
+    margin-left: 625px;
   }
 }
 
@@ -63,7 +67,7 @@ header {
   &::after {
     position: absolute;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    content: "";
+    content: '';
     opacity: 0;
     width: 100%;
     display: inline-block;
@@ -75,12 +79,12 @@ header {
 }
 .header__link:hover::after,
 .header__link:focus::after {
-   opacity: 1;
+  opacity: 1;
 }
 
 .header__btn {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   border: none;
   width: 98px;
   height: 32px;
@@ -88,16 +92,14 @@ header {
   background-color: $style-color;
   display: none;
   cursor: pointer;
-  
-  &:hover ,
+
+  &:hover,
   &:focus {
     background-color: $bg-hover-btn-color;
   }
 
-
   @media screen and (min-width: 768px) {
     display: block;
-    margin-left: auto;
   }
 
   @media screen and (min-width: 1280px) {
@@ -106,6 +108,7 @@ header {
 }
 
 .header__mob-menu {
+  
   width: 28px;
   height: 28px;
   border: none;
@@ -113,7 +116,7 @@ header {
   margin: 0;
   background-color: white;
   margin-left: auto;
-
+  
   @media screen and (min-width: 768px) {
     display: none;
   }
