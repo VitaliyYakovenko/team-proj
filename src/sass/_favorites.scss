@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+cursor: pointer;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
@@ -90,6 +91,9 @@
   &:hover {
     border: 11px solid #bbf330;
   }
+   &:focus {
+       border: 11px solid #bbf330;
+   }
 }
 .favorites-image-wrap img {
   width: 224px;

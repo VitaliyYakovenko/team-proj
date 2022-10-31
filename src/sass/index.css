@@ -111,6 +111,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .favorites-item {
@@ -156,6 +157,9 @@ img {
   }
 }
 .favorites-image-wrap:hover {
+  border: 11px solid #bbf330;
+}
+.favorites-image-wrap:focus {
   border: 11px solid #bbf330;
 }
 
