@@ -76,6 +76,11 @@ header {
     padding-right: 32px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .header__wrap.container {
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 1280px) {
   .header__wrap.container {
     width: 1280px;
@@ -96,14 +101,13 @@ header {
 @media screen and (min-width: 768px) {
   .header__list {
     display: flex;
-    margin-left: 180px;
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .header__list {
-    margin-left: 735px;
+    margin-left: 625px;
   }
 }
 
@@ -156,7 +160,6 @@ header {
 @media screen and (min-width: 768px) {
   .header__btn {
     display: block;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -178,4 +181,4 @@ header {
   .header__mob-menu {
     display: none;
   }
-}
+}/*# sourceMappingURL=index.css.map */
