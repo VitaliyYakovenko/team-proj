@@ -6,12 +6,11 @@
 // не перемещать!
 @import './utils/utils';
 // не перемещать!
+@import './utils/mixins';
+@import './components/modal';
 
 @import './components/header';
 
-@import "./components/mob-menu";
-@import "./components/offerings";
-@import "./components/favorites";
-
-
-
+@import './components/mob-menu';
+@import './components/offerings';
+@import './components/favorites';
