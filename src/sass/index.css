@@ -87,18 +87,7 @@ img {
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #ffe550;
-  -webkit-animation: fadeInDown 3s;
-          animation: fadeInDown 3s;
-}
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+  animation: fadeInDown 3s;
 }
 @keyframes fadeInDown {
   from {
@@ -147,12 +136,6 @@ img {
   border: 1px solid #7eb101;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-}
-.modal__form-input::-moz-placeholder {
-  color: #c4c4c4;
-}
-.modal__form-input:-ms-input-placeholder {
-  color: #c4c4c4;
 }
 .modal__form-input::placeholder {
   color: #c4c4c4;
@@ -1059,4 +1042,4 @@ header {
   .favorites-image-wrap img {
     width: 315px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
