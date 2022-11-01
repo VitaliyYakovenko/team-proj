@@ -1,0 +1,243 @@
+
+  
+  .swiper{
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 767px){
+    .swiper{
+        display: none;
+    }
+    }
+  
+  .hero{
+      padding-top: 60px;
+      padding-bottom: 50px;
+    background-color: #FEFEFE;
+  }
+  
+  /* Left Column */
+  
+  
+  .hero-title {
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #2C2C2C;
+  margin-bottom: 28px;
+  
+  }
+  
+  .hero-wrap{
+   
+  font-family: 'Roboto' sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2C2C2C;
+  margin-bottom: 28px;
+  }
+  
+  
+  .hero-button{
+      border-radius: 30px;
+      cursor: pointer;
+      background-color: #BBF330;   
+      font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2C2C2C;
+  padding: 6px 18px;
+  border: none;
+  font-family: inherit;
+  }
+  .hero-button:hover{
+    background-color:#B5FF00;
+  }
+   
+  
+  
+  
+  
+  
+  
+  /* Swiper slide */
+  
+  @media screen and (min-width: 768px) {
+    
+  .hero-title {
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #2C2C2C;
+  margin-bottom: 30px;
+  max-width: 537px;
+  }
+  
+  .hero-design{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .hero-wrap{
+   
+  font-family: 'Roboto' sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2C2C2C;
+  margin-bottom: 30px;
+  max-width: 336px;
+  }
+    
+  .hero{
+    display: flex;
+  }
+    
+    .swiper{
+      width: 336px;
+      height: 320px;
+      position: relative;
+      box-sizing: border-box;
+      background: #FEFEFE;
+      margin-top: 149px;
+      
+      
+    }
+    .img-swiper{
+      width: 292px;
+      height: 292px;
+      background-color: #FEFEFE;
+      border: 14px solid #FFE550;
+      border-radius: 50%;
+     
+  }
+  
+  .swiper-button-prev {
+    color: #2C2C2C;
+    left: -10px;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    width: 34px;
+    height: 28px;
+    
+    }
+    
+    
+    .swiper-button-next {
+        color: #2C2C2C;
+        background: #FEFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    right: 5px;
+    width: 34px;
+    height: 28px;
+    
+    }
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 1280px){
+  
+  .hero{
+    display: flex;
+  }
+    
+   
+  .hero-wrap{
+    max-width: 490px;
+  }
+  
+  .hero-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #2C2C2C;
+    margin-top: 159px;
+    
+    }
+    .hero-wrap{
+   
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #2C2C2C;
+      margin-bottom: 28px;
+      }
+  
+  .img-swiper{
+      width: 528px;
+      height: 528px;
+      background-color: #FEFEFE;
+      border: 26px solid #FFE550;
+      border-radius: 50%;
+  }
+  
+  .swiper {
+      width: 608px;
+      height: 608px;
+      position: relative;
+      box-sizing: border-box;
+      background: #FEFEFE;
+      margin-top: 0;
+    }
+    
+   
+  
+  .swiper-slide {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+  }
+  
+  .swiper-button-prev {
+  color: #2C2C2C;
+  left: 30px;
+  background: #FEFEFE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  width: 40px;
+  height: 48px;
+  }
+  
+  
+  .swiper-button-next {
+      color: #2C2C2C;
+      background: #FEFEFE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  right: 30px;
+  width: 40px;
+  height: 48px;
+  
+  }
+  
+  .swiper-button-prev:focus,
+  .swiper-button-next:focus,
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+      color: #7EB101;
+  }
+  
+  }
+  
