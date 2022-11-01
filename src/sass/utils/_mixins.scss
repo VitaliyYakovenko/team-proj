@@ -1,0 +1,75 @@
+@mixin boxSize($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin font($fs: false, $fw: false, $lh: false, $ls: false) {
+  @if $fs {
+    font-size: $fs;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $lh {
+    letter-spacing: $ls;
+  }
+}
+
+/* Media queries */
+$breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1280px,
+);
+
+@mixin mq($range) {
+  $mobile: 480px;
+  $tablet: 768px;
+  $desktop: 1280px;
+
+  @if $range == mobile-only {
+    @media screen and (max-width: #{$tablet - 0.02}) {
+      @content;
+    }
+  } @else if $range == mobile {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  } @else if $range == tablet-only {
+    @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $range == befor-desktop {
+    @media screen and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  } @else if $range == retina {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+}
+
+/* Animation */
+@mixin animation($animation, $duration) {
+  animation: $animation $duration;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
