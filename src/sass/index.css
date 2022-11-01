@@ -500,7 +500,7 @@ header {
 .favorites {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #F5F5F5;
+  background-color: #FEFEFE;
 }
 @media screen and (min-width: 768px) {
   .favorites {
@@ -615,4 +615,4 @@ header {
   .favorites-image-wrap img {
     width: 315px;
   }
-}
+}/*# sourceMappingURL=index.css.map */
