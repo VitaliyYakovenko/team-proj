@@ -108,6 +108,7 @@ header {
 }
 
 .header__mob-menu {
+  
   width: 28px;
   height: 28px;
   border: none;
@@ -118,5 +119,14 @@ header {
   
   @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+.modile-menu__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $footer-link-color;
+
+  &:hover,
+  &:focus {
+    fill:$bg-style-color;
   }
 }
