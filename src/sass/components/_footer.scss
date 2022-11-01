@@ -1,0 +1,101 @@
+.footer {
+    max-width: 480px;
+    min-height: 600px;
+    background-color: $bg-header-color;
+    background-image: url(../../images/footer/mob-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pexel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192pdi),
+    (min-resolution: 2dppx) {
+        background-image: url(../../images/footer/mobx2.jpg);
+    }
+
+    @media (min-device-pexel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288pdi),
+    (min-resolution: 3dppx) {
+        background-image: url(../../images/footer/mobx3.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        background-image: url(../../images/footer/tab-bg.jpg);
+
+        @media (min-device-pexel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192pdi),
+        (min-resolution: 2dppx) {
+            background-image: url(../../images/footer/tabx2.jpg);
+        }
+
+        @media (min-device-pexel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288pdi),
+        (min-resolution: 3dppx) {
+            background-image: url(../../images/footer/tabx3.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1280px;
+        min-height: 395px;
+        background-image: url(../../images/footer/desk-bg.jpg);
+
+        @media (min-device-pexel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192pdi),
+        (min-resolution: 2dppx) {
+            background-image: url(../../images/footer/deskx2.jpg);
+        }
+
+        @media (min-device-pexel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288pdi),
+        (min-resolution: 3dppx) {
+            background-image: url(../../images/footer/deskx3.jpg);
+        }
+    }
+}
+
+.footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.footer__list__item {
+    line-height: 1.14;
+    color: $tablet-header-footer-color;
+    list-style: none;
+
+    @media screen and (min-width: 1280px) {
+        color: $main-text-color;
+    }
+}
+
+.subscribe {
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__input {
+        width: 279px;
+        height: 42px;
+        margin-bottom: 20px;
+        border: 0.854167px solid $bg-style-color;
+        border-radius: 30px;
+        background-color: $bg-white-color;
+    }
+}
+
+.footer-submit {
+    padding: 11px 22px;
+    margin-bottom: 20px;
+    background: $bg-white-color;
+    border: 0.854167px solid $footer-link-color;
+    border-radius: 30px;
+}
