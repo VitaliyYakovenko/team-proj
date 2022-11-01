@@ -1,0 +1,243 @@
+.root {
+  position: relative;
+}
+
+.js-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include boxSize(100vw, 100vh);
+
+  background-color: $modal-bg-color;
+
+  &__form {
+    position: absolute;
+
+    width: 100%;
+    padding: 32px 20px;
+
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $bg-style-color;
+
+    @include keyframes(fadeInDown) {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @include animation(fadeInDown, 3s);
+
+    @include mq(mobile) {
+      width: 458px;
+    }
+  }
+
+  &__form-title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
+
+  &__form-element {
+    margin-bottom: 24px;
+  }
+
+  &__last-element {
+    margin-bottom: 32px;
+  }
+
+  &__form-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+    padding-left: 12px;
+    color: $main-text-color;
+  }
+
+  &__form-input {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 48px;
+
+    padding: 0 12px;
+    background-color: $bg-white-color;
+
+    border: 1px solid $footer-link-color;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+
+    &::placeholder {
+      color: $modal-placeholder-text-color;
+    }
+  }
+
+  .form__input-wrapper {
+    display: none;
+    margin-left: 12px;
+  }
+
+  .form__icon-error {
+    margin-right: 4px;
+  }
+
+  .form__error,
+  .form__error-required {
+    display: inline;
+
+    color: $modal-error-text-color;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+  }
+
+  .form__error {
+    font-size: 11px;
+
+    @include mq(desktop) {
+      font-size: 13px;
+    }
+  }
+
+  .form__error-required {
+    font-size: 13px;
+  }
+
+  &__btn-submit {
+    display: block;
+    width: 106px;
+    height: 40px;
+    margin: 0 auto;
+
+    border-radius: 30px;
+    border: 2px solid $footer-link-color;
+    background-color: $bg-white-color;
+
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-hover-btn-color;
+    }
+  }
+}
+
+.btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  display: flex;
+  align-items: center;
+  @include boxSize(30px, 30px);
+
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  background-color: $bg-white-color;
+
+  cursor: pointer;
+
+  @include mq(mobile) {
+    top: 12px;
+    right: 12px;
+  }
+
+  &__icon--close {
+    @include boxSize(18px, 18px);
+
+    fill: $main-text-color;
+    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover &__icon--close,
+  &:focus &__icon--close {
+    fill: $style-color;
+  }
+}
+
+.error,
+.required {
+  &.modal__form-element {
+    margin-bottom: 9px;
+
+    @include mq(desktop) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &.modal__last-element {
+    margin-bottom: 17px;
+
+    @include mq(desktop) {
+      margin-bottom: 14px;
+    }
+  }
+
+  .modal__form-input {
+    border: 1px solid red;
+  }
+
+  .form__input-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &.modal__btn-submit,
+  .modal__btn-submit {
+    border: 2px solid $modal-error-bg-color;
+    background-color: $bg-white-color;
+
+    &:hover,
+    &:focus {
+      color: $bg-white-color;
+      background-color: $modal-error-bg-color;
+    }
+  }
+
+  .form__error-required {
+    display: none;
+  }
+}
+
+.required {
+  .form__error {
+    display: none;
+  }
+
+  .modal__form-element {
+    margin-bottom: 6px;
+  }
+
+  .modal__last-element {
+    margin-bottom: 14px;
+  }
+
+  .form__error-required {
+    display: inline;
+  }
+}

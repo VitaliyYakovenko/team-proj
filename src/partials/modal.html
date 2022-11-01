@@ -1,0 +1,51 @@
+<div class="modal js-hidden" data-modal>
+
+  <form class="modal__form js-form">
+    <button class="btn-close" data-modal-close>
+      <svg class="btn-close__icon--close">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <p class="modal__form-title">Order Form</p>
+
+    <div class="modal__form-element">
+      <label class="modal__form-label" for="name">Name</label>
+      <input class="modal__form-input" id="name" type="text" name="name" placeholder="Your name" maxlength="25" />
+      <div class="form__input-wrapper">
+        <svg class="form__icon-error" width="12" height="12">
+          <use href="./images/sprite.svg#form-error"></use>
+        </svg>
+        <p class="form__error">The name must be between 3 and 25 characters</p>
+        <p class="form__error-required">This field is required</p>
+      </div>
+    </div>
+
+    <div class="modal__form-element">
+      <label class="modal__form-label" for="phone">Phone number</label>
+      <input class="modal__form-input" id="phone" type="tel" name="phone" placeholder="+38(0 _ _) _ _ _  _ _  _ _"
+        maxlength="19" />
+      <div class="form__input-wrapper">
+        <svg class="form__icon-error" width="12" height="12">
+          <use href="./images/sprite.svg#form-error"></use>
+        </svg>
+        <p class="form__error">This phone must be in the format 099 000 00 00</p>
+        <p class="form__error-required">This field is required</p>
+      </div>
+    </div>
+
+    <div class="modal__form-element modal__last-element">
+      <label class="modal__form-label" for="email">E-mail</label>
+      <input class="modal__form-input" id="email" type="email" name="email" placeholder="example@gmail.com" />
+      <div class="form__input-wrapper">
+        <svg class="form__icon-error" width="12" height="12">
+          <use href="./images/sprite.svg#form-error"></use>
+        </svg>
+        <p class="form__error">Please enter a valid email address</p>
+        <p class="form__error-required">This field is required</p>
+      </div>
+    </div>
+
+    <button class="btn modal__btn-submit" type="submit">Send</button>
+  </form>
+</div>

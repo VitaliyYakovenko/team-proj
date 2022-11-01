@@ -21,11 +21,18 @@
 
   <body>
     <div class="root">
+      <include src="./partials/modal.html"></include>
       <include src="./partials/header.html"></include>
 
       <include src="./partials/favorites.html"></include>
+
     </div>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous" defer></script>
+
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 
 </html>
