@@ -1,13 +1,16 @@
 (() => {
   const { openModalBtn, closeModalBtn, modal, body, form } = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
+    openModalBtn: document.querySelectorAll('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('body'),
     form: document.querySelector('.js-form'),
   };
 
-  openModalBtn.addEventListener('click', toggleModal);
+  openModalBtn.forEach(openBtn =>
+    openBtn.addEventListener('click', toggleModal)
+  );
+
   closeModalBtn.addEventListener('click', toggleModal);
   form.addEventListener('submit', submitForm);
 
