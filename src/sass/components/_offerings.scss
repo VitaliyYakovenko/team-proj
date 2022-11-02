@@ -113,7 +113,7 @@
     }
 }
 
-.offerings__list {
+.offerings__list.list {
     margin: 0;
 
     @media screen and (min-width: 768px) {
@@ -142,7 +142,6 @@
     font-style: inherit;
     line-height: 1.5;
     
-    cursor: pointer;
 }
 
 .offerings__btn-order {
@@ -170,7 +169,7 @@
 
     display: flex;
     align-items: center;
-
+    cursor: pointer;
     border: none;
 
     color: $tablet-header-footer-color;
@@ -232,7 +231,7 @@
     background-image: url(../images/offerings/bgi-mobile320.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 0;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -263,6 +262,7 @@
   @media screen and (min-width: 768px) {
     .overlay {
         max-width: 1279px;
+        background-position: center;
         background-image: url(../images/offerings/bgi-tablet.png);
     }
 
