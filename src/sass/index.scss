@@ -8,13 +8,12 @@
 // не перемещать!
 @import './utils/mixins';
 @import './components/modal';
-
 @import './components/header';
-
 @import './components/mob-menu';
-
+@import "./components/hero";
 @import './components/offerings';
-
 @import './components/favorites';
 
+@import "./components/customers-say";
+@import "./components/subscribe";
 @import './components/footer';
