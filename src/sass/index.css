@@ -903,6 +903,8 @@ header {
   .footer {
     max-width: 768px;
     min-height: 506px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url("../images/footer/tab-bg.jpg");
   }
 }
@@ -916,19 +918,19 @@ header {
     background-image: url("../images/footer/tab-bg3x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer {
     max-width: 1280px;
     min-height: 395px;
     background-image: url("../images/footer/desk-bg.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pexel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pexel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .footer {
     background-image: url("../images/footer/desk-bg2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pexel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 1280px) and (min-device-pexel-ratio: 3), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 288dpi), screen and (min-width: 1280px) and (min-resolution: 3dppx) {
   .footer {
     background-image: url("../images/footer/desk-bg3x.jpg");
   }
@@ -936,17 +938,27 @@ header {
 
 .footer-wrap {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
 }
 @media screen and (max-width: 479px) {
   .footer-wrap {
     width: 100%;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-wrap {
     align-items: center;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .footer-wrap {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-wrap {
+    margin-bottom: 80px;
   }
 }
 
@@ -960,10 +972,16 @@ header {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__list {
     display: flex;
     margin-right: 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__list {
+    margin-left: 100px;
+    display: flex;
   }
 }
 
@@ -975,6 +993,7 @@ header {
 @media screen and (min-width: 1280px) {
   .footer__list__item {
     color: #2c2c2c;
+    text-align: center;
   }
 }
 
@@ -998,6 +1017,11 @@ header {
   width: 100%;
   justify-content: center;
 }
+@media screen and (min-width: 1280px) {
+  .subscribe {
+    margin-left: 300px;
+  }
+}
 .subscribe__title {
   display: block;
   margin-bottom: 12px;
@@ -1018,16 +1042,27 @@ header {
   border-radius: 30px;
   background-color: #fff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .subscribe__input {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    margin-right: 13px;
+    margin-bottom: 12px;
+  }
+}
 
 .footer-bt {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .footer-bt {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
 }
 .footer-bt__submit {
   padding: 11px 22px;
@@ -1057,11 +1092,27 @@ header {
           text-decoration-line: underline;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-privacy {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .privacy {
   display: flex;
-  justify-content: space-between;
   margin: 0;
-  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .privacy {
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .privacy__list:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 .privacy__link {
   font-size: 10px;
@@ -1070,10 +1121,23 @@ header {
           text-decoration-line: underline;
   color: #7eb101;
 }
+@media screen and (min-width: 768px) {
+  .privacy__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 
 .copyright {
-  display: flex;
-  justify-content: center;
   font-size: 10px;
   line-height: 1.2;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    font-size: 12px;
+    line-height: 1.17;
+    align-items: center;
+  }
 }/*# sourceMappingURL=index.css.map */
