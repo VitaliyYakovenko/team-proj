@@ -496,8 +496,7 @@ header {
   }
 }
 .hero {
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-top: 14px;
   background-color: #FEFEFE;
 }
 
@@ -783,17 +782,17 @@ header {
   }
 }
 
-.offerings__list {
+.offerings__list.list {
   margin: 0;
 }
 @media screen and (min-width: 768px) {
-  .offerings__list {
+  .offerings__list.list {
     display: flex;
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .offerings__list {
+  .offerings__list.list {
     margin-bottom: 32px;
   }
 }
@@ -885,7 +884,7 @@ header {
   background-image: url(../images/offerings/bgi-mobile320.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 0;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -908,6 +907,7 @@ header {
   .overlay {
     max-width: 1279px;
     background-image: url(../images/offerings/bgi-tablet.png);
+    background-position: center;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
