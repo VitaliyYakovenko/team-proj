@@ -1,5 +1,5 @@
 .subscribe {
-    background-color: $bg-white-color;
+    background-color: #fff; 
     padding-bottom: 60px;
 
     @media screen and (min-width: 768px) {
@@ -63,7 +63,7 @@
     display: block;
     margin: 0 auto;
 
-    width: 278px;
+    width: 100%;
     height: 42px;
     padding-right: 0;
     padding-top: 12px;
@@ -73,6 +73,10 @@
     border: 0.854167px solid $bg-style-color;
     border-radius: 30px;
     margin-bottom: 20px;
+    
+    @media screen and (min-width: 768px) {
+        width: 278px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 395px;
@@ -84,6 +88,14 @@
         width: 395px;
         margin-bottom: 32px;
     }
+}
+
+.subscribe__subscribe-form input:valid {
+    border: 0.854167px solid #7EB101;
+}
+
+.subscribe__subscribe-form input:invalid {
+    border: 0.854167px solid #FF705D;
 }
 
 .subscribe-form__button {
@@ -123,6 +135,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 17px;
+    margin-top: -40px;
 
     @media screen and (min-width: 768px) {
         margin-left: auto;
