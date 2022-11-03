@@ -11,7 +11,7 @@
     background-position: center;
     background-size: cover;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-    // 
+
 
     @media (min-device-pexel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -50,7 +50,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      max-width: 1600px;
+      // max-width: 1600px;
       min-height: 395px;
       background-image: url('../images/footer/desk-bg.png');
 
@@ -91,7 +91,6 @@
       margin-bottom: 80px;
     }
   }
-  // r
 
   .footer__list {
     margin: 0;

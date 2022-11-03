@@ -1400,7 +1400,6 @@ li {
 }
 @media screen and (min-width: 1280px) {
   .footer {
-    max-width: 1600px;
     min-height: 395px;
     background-image: url("../images/footer/desk-bg.png");
   }
