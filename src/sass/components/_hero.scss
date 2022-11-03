@@ -97,10 +97,13 @@
   max-width: 336px;
   }
     
-  .hero{
+  // .hero{
+  //   display: flex;
+  // }
+  .rules {
     display: flex;
   }
-    
+  
     .swiper{
       width: 336px;
       height: 320px;
@@ -240,6 +243,8 @@
   .swiper-button-next:hover {
       color: #7EB101;
   }
-  
+   .rules {
+    display: flex;
+   }
   }
   

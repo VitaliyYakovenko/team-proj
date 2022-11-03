@@ -564,7 +564,7 @@ header {
     margin-bottom: 30px;
     max-width: 336px;
   }
-  .hero {
+  .rules {
     display: flex;
   }
   .swiper {
@@ -669,6 +669,9 @@ header {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
     color: #7EB101;
+  }
+  .rules {
+    display: flex;
   }
 }
 .offerings {
