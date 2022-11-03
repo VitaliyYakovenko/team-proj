@@ -1368,6 +1368,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 }
 @media (min-device-pexel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer {
