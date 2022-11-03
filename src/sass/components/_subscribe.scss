@@ -1,12 +1,11 @@
 .subscribe {
     background-color: $bg-main-color; 
     padding-bottom: 60px;
-    // padding-top: 60px;
+    padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: 480px) {
-        // padding-top: 60px;
         background-image: url(.././images/customers/mob-bcg-customer-1.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -153,7 +152,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 17px;
-    margin-top: -40px;
+    // margin-top: -40px;
+    margin-top: -95px ;
 
     @media screen and (min-width: 768px) {
         margin-left: auto;

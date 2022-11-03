@@ -1203,8 +1203,9 @@ li {
 }
 
 .subscribe {
-  background-color: #fff;
+  background-color: #fefefe;
   padding-bottom: 60px;
+  padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1327,11 +1328,11 @@ li {
 }
 
 .subscribe__subscribe-form input:valid {
-  border: 0.854167px solid #7EB101;
+  border: 0.854167px solid #7eb101;
 }
 
 .subscribe__subscribe-form input:invalid {
-  border: 0.854167px solid #FF705D;
+  border: 0.854167px solid #ff705d;
 }
 
 .subscribe-form__button {
@@ -1365,7 +1366,7 @@ li {
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
-  margin-top: -40px;
+  margin-top: -95px;
 }
 @media screen and (min-width: 768px) {
   .subscribe__picture {
