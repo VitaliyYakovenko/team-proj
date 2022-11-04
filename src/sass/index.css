@@ -772,12 +772,12 @@ header {
 
 @media screen and (min-width: 768px) {
   .offerings__div {
-    margin-right: 204px;
+    padding-right: 204px;
   }
 }
 @media screen and (min-width: 1280px) {
   .offerings__div {
-    margin-right: 82px;
+    padding-right: 82px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -875,6 +875,11 @@ header {
 }
 .offerings__btn-order:hover, .offerings__btn-order:focus, .offerings__btn-order:active {
   border: 2px solid #597d00;
+}
+@media screen and (min-width: 1280px) {
+  .offerings__btn-order {
+    margin-right: 0;
+  }
 }
 
 .offerings__btn-read {
@@ -1414,7 +1419,6 @@ li {
     height: 266px;
     margin-top: -48px;
   }
-
 }
 
 .footer {
@@ -1684,5 +1688,4 @@ li {
     line-height: 1.17;
     align-items: center;
   }
-
 }/*# sourceMappingURL=index.css.map */
