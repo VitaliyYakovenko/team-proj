@@ -92,7 +92,18 @@ img {
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #ffe550;
-  animation: fadeInDown 3s;
+  -webkit-animation: fadeInDown 3s;
+          animation: fadeInDown 3s;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 @keyframes fadeInDown {
   from {
@@ -141,6 +152,12 @@ img {
   border: 1px solid #7eb101;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+}
+.modal__form-input::-moz-placeholder {
+  color: #c4c4c4;
+}
+.modal__form-input:-ms-input-placeholder {
+  color: #c4c4c4;
 }
 .modal__form-input::placeholder {
   color: #c4c4c4;
@@ -523,7 +540,7 @@ header {
 @media screen and (min-width: 768px) {
   .hero {
     padding-bottom: 0;
-    margin-bottom: -100px;
+    margin-bottom: -105px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -601,14 +618,12 @@ header {
     display: flex;
   }
   .swiper {
-    width: 292px;
+    width: 320px;
     position: relative;
     box-sizing: border-box;
-    margin-top: -45px;
+    margin-top: -55px;
   }
   .img-swiper {
-    width: 292px;
-    height: 292px;
     background-color: #FEFEFE;
     border: 14px solid #FFE550;
     border-radius: 50%;
@@ -647,6 +662,7 @@ header {
     line-height: 1.2;
     color: #2C2C2C;
     margin-top: 159px;
+    max-width: 502px;
   }
   .hero-wrap {
     font-family: "Roboto";
@@ -1276,6 +1292,18 @@ li {
   }
 }
 
+.subscribe-form__label::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+.subscribe-form__label:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
 .subscribe-form__label::placeholder {
   font-size: 12px;
   line-height: 1.5;
@@ -1589,7 +1617,8 @@ li {
 }
 .private__link {
   color: #7eb101;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -1617,7 +1646,8 @@ li {
 .privacy__link {
   font-size: 10px;
   line-height: 1.2;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #7eb101;
 }
 @media screen and (min-width: 768px) {
@@ -1639,4 +1669,4 @@ li {
     line-height: 1.17;
     align-items: center;
   }
-}
+}/*# sourceMappingURL=index.css.map */

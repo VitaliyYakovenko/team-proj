@@ -17,7 +17,7 @@
     //  правки
       @media screen and (min-width: 768px) {
         padding-bottom: 0;
-        margin-bottom: -100px;
+        margin-bottom: -105px;
       }
       @media screen and (min-width: 1280px) {
         padding-top: 0;
@@ -116,17 +116,17 @@
   }
   
     .swiper{
-      width: 292px;
+      width: 320px;
       // height: 320px;
       position: relative;
       box-sizing: border-box;
       // background-color: transparent;
-      margin-top: -45px;
+      margin-top: -55px;
       
     }
     .img-swiper{
-      width: 292px;
-      height: 292px;
+      // width: 292px;
+      // height: 292px;
       background-color: #FEFEFE;
       border: 14px solid #FFE550;
       border-radius: 50%;
@@ -186,6 +186,7 @@
     line-height: 1.2;
     color: #2C2C2C;
     margin-top: 159px;
+    max-width: 502px;
     
     }
     .hero-wrap{
