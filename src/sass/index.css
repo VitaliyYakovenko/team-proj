@@ -488,6 +488,7 @@ header {
 
 .swiper {
   width: 100%;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 767px) {
@@ -496,7 +497,20 @@ header {
   }
 }
 .hero {
-  padding-top: 14px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 0;
+    margin-bottom: -140px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 0;
+    margin-bottom: -180px;
+  }
 }
 
 /* Left Column */
@@ -571,7 +585,6 @@ header {
     height: 320px;
     position: relative;
     box-sizing: border-box;
-    background: #FEFEFE;
     margin-top: 149px;
   }
   .img-swiper {
@@ -637,7 +650,7 @@ header {
     height: 608px;
     position: relative;
     box-sizing: border-box;
-    background: #FEFEFE;
+    background-color: transparent;
     margin-top: 0;
   }
   .swiper-slide {
@@ -685,7 +698,7 @@ header {
 }
 @media screen and (min-width: 1280px) {
   .offerings {
-    padding-top: 177px;
+    padding-top: 180px;
     padding-bottom: 43px;
   }
 }
@@ -908,9 +921,7 @@ header {
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 1279px;
-    background-position: center;
     background-image: url(../images/offerings/bgi-tablet.png);
-    background-position: center;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {

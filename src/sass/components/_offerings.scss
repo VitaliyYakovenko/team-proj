@@ -10,7 +10,8 @@
     }
 
     @media screen and (min-width: 1280px) {
-        padding-top: 177px;
+        // padding-top: 177px;
+        padding-top: 180px;
         padding-bottom: 43px;
     }
 }
@@ -262,9 +263,9 @@
   @media screen and (min-width: 768px) {
     .overlay {
         max-width: 1279px;
-        background-position: center;
+        // background-position: center;
         background-image: url(../images/offerings/bgi-tablet.png);
-        background-position: center;
+        // background-position: center;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
