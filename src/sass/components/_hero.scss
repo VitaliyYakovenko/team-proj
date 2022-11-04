@@ -28,7 +28,6 @@
   
   /* Left Column */
   
-  
   .hero-title {
     font-family: 'Roboto' sans-serif;
     font-weight: 700;
@@ -36,7 +35,9 @@
     line-height: 1.2;
     color: #2C2C2C;
   margin-bottom: 28px;
-  
+    // @media screen and (min-width: 768px) {
+    //   width: 573px;
+    // }
   }
   
   .hero-wrap{
