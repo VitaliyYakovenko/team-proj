@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   font-weight: 400;
@@ -88,7 +92,18 @@ img {
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #ffe550;
-  animation: fadeInDown 3s;
+  -webkit-animation: fadeInDown 3s;
+          animation: fadeInDown 3s;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 @keyframes fadeInDown {
   from {
@@ -137,6 +152,12 @@ img {
   border: 1px solid #7eb101;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+}
+.modal__form-input::-moz-placeholder {
+  color: #c4c4c4;
+}
+.modal__form-input:-ms-input-placeholder {
+  color: #c4c4c4;
 }
 .modal__form-input::placeholder {
   color: #c4c4c4;
@@ -312,6 +333,12 @@ header {
   height: 52px;
 }
 
+@media screen and (min-width: 1280px) {
+  .header__nav {
+    margin-left: auto;
+  }
+}
+
 .header__list {
   list-style: none;
   display: none;
@@ -321,11 +348,6 @@ header {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .header__list {
-    margin-left: 625px;
   }
 }
 
@@ -340,6 +362,11 @@ header {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000;
+}
+@media screen and (min-width: 1280px) {
+  .header__link {
+    color: #2c2c2c;
+  }
 }
 .header__link:hover, .header__link:focus {
   color: #bbf330;
@@ -364,6 +391,12 @@ header {
 
 .header__btn {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
   border: none;
   width: 98px;
   height: 32px;
@@ -484,6 +517,10 @@ header {
   font-size: 16px;
   line-height: 1.18;
   color: #000000;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .swiper {
@@ -1267,6 +1304,18 @@ li {
   }
 }
 
+.subscribe-form__label::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+.subscribe-form__label:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
 .subscribe-form__label::placeholder {
   font-size: 12px;
   line-height: 1.5;
@@ -1483,9 +1532,7 @@ li {
   .footer__list__item {
     color: #2c2c2c;
     text-align: center;
-  }
-  .footer__list__item:nth-child(4) {
-    width: 90px;
+    white-space: nowrap;
   }
 }
 
@@ -1502,6 +1549,10 @@ li {
 
 .footer__link {
   color: #000000;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__link:hover, .footer__link:focus {
+  color: #bbf330;
 }
 
 .footer__subscribe {
@@ -1580,7 +1631,8 @@ li {
 }
 .private__link {
   color: #7eb101;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -1608,7 +1660,8 @@ li {
 .privacy__link {
   font-size: 10px;
   line-height: 1.2;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #7eb101;
 }
 @media screen and (min-width: 768px) {
@@ -1630,4 +1683,4 @@ li {
     line-height: 1.17;
     align-items: center;
   }
-}
+}/*# sourceMappingURL=index.css.map */
