@@ -213,30 +213,12 @@
         // background-image: url(../images/customers/tab-bcg-customer-1.png);
         // background-position: 90% 613%;
         padding-bottom: 100px;
-        // padding-top: 46px;
         margin-top: -70px;
-
-        // @media screen and (min-device-pixel-ratio: 2),
-        // screen and (-webkit-min-device-pixel-ratio: 2),
-        // screen and (min-resolution: 192dpi),
-        // screen and (min-resolution: 2dppx) {
-        //     background-image: url(../images/customers/tab-bcg-customer-2.png);
-        // }
     }
 
     @media screen and (min-width: 1280px) {
         margin-top: -17px;
-        // background-image: url(../images/customers/desk-bcg-customer-1.png);
-        // background-position: center 255%;
         padding-bottom: 100px;
-        // padding-top: 90px;
-
-        // @media screen and (min-device-pixel-ratio: 2),
-        // screen and (-webkit-min-device-pixel-ratio: 2),
-        // screen and (min-resolution: 192dpi),
-        // screen and (min-resolution: 2dppx) {
-        //     background-image: url(../images/customers/desk-bcg-customer-2.png);
-        // }
     }
 }
 
@@ -263,7 +245,6 @@
 }
 
 .subscribe__text {
-    // font-size: 14px;
     line-height: 1.14;
     margin-bottom: 40px;
 
@@ -367,13 +348,11 @@
 
     @media screen and (min-width: 768px) {
         margin-left: auto;
-        // margin-top: -45px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 608px;
         height: 266px;
         margin-top: -48px;
-        // margin-top: -38px;
     }
 }
