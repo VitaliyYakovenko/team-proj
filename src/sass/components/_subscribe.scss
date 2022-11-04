@@ -1,30 +1,242 @@
+// .subscribe {
+//     background-color: $bg-main-color; 
+//     padding-bottom: 60px;
+//     // padding-top: 60px;
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     @media screen and (min-width: 480px) {
+//         // padding-top: 60px;
+//         background-image: url(../images/customers/mob-bcg-customer-1.png);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-position: center 140%;
+
+//         @media screen and (min-device-pixel-ratio: 2),
+//             screen and (-webkit-min-device-pixel-ratio: 2),
+//             screen and (min-resolution: 192dpi),
+//             screen and (min-resolution: 2dppx) {
+//                 background-image: url(../images/customers/mob-bcg-customer-2.png);
+//         }
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         background-image: url(../images/customers/tab-bcg-customer-1.png);
+//         background-position: 90% 613%;
+//         padding-bottom: 100px;
+//         padding-top: 46px;
+
+//         @media screen and (min-device-pixel-ratio: 2),
+//             screen and (-webkit-min-device-pixel-ratio: 2),
+//             screen and (min-resolution: 192dpi),
+//             screen and (min-resolution: 2dppx) {
+//                 background-image: url(../images/customers/tab-bcg-customer-2.png);
+//         }
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         margin-top: -44px;
+//         background-image: url(../images/customers/desk-bcg-customer-1.png);
+//         background-position: center 255%;
+//         padding-bottom: 100px;
+//         padding-top: 90px;
+
+//         @media screen and (min-device-pixel-ratio: 2),
+//             screen and (-webkit-min-device-pixel-ratio: 2),
+//             screen and (min-resolution: 192dpi),
+//             screen and (min-resolution: 2dppx) {
+//                 background-image: url(../images/customers/desk-bcg-customer-2.png);
+//         }
+//     }
+// }
+
+// .subscribe__container {
+//     display: flex;
+//     flex-direction: column-reverse;
+
+//     @media screen and (min-width: 1280px) {
+//         flex-direction: row;
+//         align-items: center;
+//     }
+// }
+
+// .subscribe__title {
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 28px;
+//     line-height: 1.2;
+//     margin-bottom: 20px;
+
+//     @media screen and (min-width: 768px) {
+//         font-size: 42px;
+//     }
+// }
+
+// .subscribe__text {
+//     // font-size: 14px;
+//     line-height: 1.14;
+//     margin-bottom: 40px;
+
+//     @media screen and (min-width: 768px) {
+//         font-size: 16px;
+//         line-height: 1.50;
+//     }
+// }
+
+// .subscribe-form__label {
+
+//     &::placeholder {
+//         font-size: 12px;
+//         line-height: 1.5;
+//         color: $placeholder-color;
+//     }
+// }
+
+// .subscribe__subscribe-form {
+//     @media screen and (min-width: 768px) {
+//         display: flex;
+//     }
+// }
+
+// .subscribe__subscribe-form input {
+//     display: block;
+//     margin: 0 auto;
+
+//     width: 100%;
+//     height: 42px;
+//     padding-right: 0;
+//     padding-top: 12px;
+//     padding-bottom: 12px;
+//     padding-left: 11px;
+//     background-color: $bg-white-color;
+//     border: 0.854167px solid $bg-style-color;
+//     border-radius: 30px;
+//     margin-bottom: 20px;
+    
+//     @media screen and (min-width: 768px) {
+//         width: 278px;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         width: 395px;
+//         margin-bottom: 0;
+//         margin-right: 22px;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         width: 395px;
+//         margin-bottom: 32px;
+//     }
+// }
+
+// .subscribe__subscribe-form input:valid {
+//     border: 0.854167px solid $footer-link-color;
+// }
+
+// .subscribe__subscribe-form input:invalid {
+//     border: 0.854167px solid $modal-error-text-color;
+// }
+
+// .subscribe-form__button {
+//     display: block;
+//     margin-left: auto;
+
+//     font-weight: 500;
+//     font-size: 13px;
+//     line-height: 1.53;
+//     color: $main-text-color;
+
+//     width: 103px;
+//     height: 42px;
+//     border: none;
+//     background-color: $style-color;
+//     border-radius: 30px;
+
+//     cursor: pointer;
+
+//     padding: 11px 22px;
+
+//     transition-property: background-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     @media screen and (min-width: 768px) {
+//         margin: 0;
+//     }
+
+//     &:hover,
+//     &:focus {
+//         background-color: $bg-hover-btn-color;
+//     }
+// }
+
+// .subscribe__picture {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 17px;
+//     margin-top: -40px;
+
+//     @media screen and (min-width: 768px) {
+//         margin-left: auto;
+//         margin-top: -45px;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         width: 608px;
+//         height: 266px;
+//         margin-top: -48px;
+//     }
+// }
+
+
 .subscribe {
-    background-color: $bg-main-color; 
+    background-color: transparent;
+    margin: -60px auto 0;
     padding-bottom: 60px;
-    padding-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
 
     @media screen and (min-width: 480px) {
-        background-image: url(.././images/customers/mob-bcg-customer-1.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center 140%;
+        // // padding-top: 60px;
+        // background-image: url(../images/customers/mob-bcg-customer-1.png);
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: center 140%;
+
+        // @media screen and (min-device-pixel-ratio: 2),
+        // screen and (-webkit-min-device-pixel-ratio: 2),
+        // screen and (min-resolution: 192dpi),
+        // screen and (min-resolution: 2dppx) {
+        //     background-image: url(../images/customers/mob-bcg-customer-2.png);
+        // }
     }
 
     @media screen and (min-width: 768px) {
-        background-image: url(.././images/customers/tab-bcg-customer-1.png);
-        background-position: 90% 613%;
+        // background-image: url(../images/customers/tab-bcg-customer-1.png);
+        // background-position: 90% 613%;
         padding-bottom: 100px;
-        padding-top: 46px;
+        // padding-top: 46px;
+        margin-top: -70px;
+
+        // @media screen and (min-device-pixel-ratio: 2),
+        // screen and (-webkit-min-device-pixel-ratio: 2),
+        // screen and (min-resolution: 192dpi),
+        // screen and (min-resolution: 2dppx) {
+        //     background-image: url(../images/customers/tab-bcg-customer-2.png);
+        // }
     }
 
     @media screen and (min-width: 1280px) {
-        margin-top: -44px;
-        background-image: url(.././images/customers/desk-bcg-customer-1.png);
-        background-position: center 255%;
+        margin-top: -17px;
+        // background-image: url(../images/customers/desk-bcg-customer-1.png);
+        // background-position: center 255%;
         padding-bottom: 100px;
-        padding-top: 90px;
+        // padding-top: 90px;
+
+        // @media screen and (min-device-pixel-ratio: 2),
+        // screen and (-webkit-min-device-pixel-ratio: 2),
+        // screen and (min-resolution: 192dpi),
+        // screen and (min-resolution: 2dppx) {
+        //     background-image: url(../images/customers/desk-bcg-customer-2.png);
+        // }
     }
 }
 
@@ -90,7 +302,7 @@
     border: 0.854167px solid $bg-style-color;
     border-radius: 30px;
     margin-bottom: 20px;
-    
+
     @media screen and (min-width: 768px) {
         width: 278px;
     }
@@ -152,17 +364,16 @@
     display: flex;
     justify-content: center;
     margin-bottom: 17px;
-    // margin-top: -40px;
-    margin-top: -95px ;
 
     @media screen and (min-width: 768px) {
         margin-left: auto;
-        margin-top: -45px;
+        // margin-top: -45px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 608px;
         height: 266px;
         margin-top: -48px;
+        // margin-top: -38px;
     }
 }
