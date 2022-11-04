@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   font-weight: 400;
@@ -329,6 +333,12 @@ header {
   height: 52px;
 }
 
+@media screen and (min-width: 1280px) {
+  .header__nav {
+    margin-left: auto;
+  }
+}
+
 .header__list {
   list-style: none;
   display: none;
@@ -338,11 +348,6 @@ header {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .header__list {
-    margin-left: 625px;
   }
 }
 
@@ -357,6 +362,11 @@ header {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000;
+}
+@media screen and (min-width: 1280px) {
+  .header__link {
+    color: #2c2c2c;
+  }
 }
 .header__link:hover, .header__link:focus {
   color: #bbf330;
@@ -381,6 +391,12 @@ header {
 
 .header__btn {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
   border: none;
   width: 98px;
   height: 32px;
@@ -503,8 +519,13 @@ header {
   color: #000000;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .swiper {
   width: 100%;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 767px) {
@@ -513,8 +534,20 @@ header {
   }
 }
 .hero {
-  padding-top: 14px;
-  background-color: #FEFEFE;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 0;
+    margin-bottom: -140px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 0;
+    margin-bottom: -180px;
+  }
 }
 
 /* Left Column */
@@ -581,7 +614,7 @@ header {
     margin-bottom: 30px;
     max-width: 336px;
   }
-  .hero {
+  .rules {
     display: flex;
   }
   .swiper {
@@ -589,7 +622,6 @@ header {
     height: 320px;
     position: relative;
     box-sizing: border-box;
-    background: #FEFEFE;
     margin-top: 149px;
   }
   .img-swiper {
@@ -655,7 +687,7 @@ header {
     height: 608px;
     position: relative;
     box-sizing: border-box;
-    background: #FEFEFE;
+    background-color: transparent;
     margin-top: 0;
   }
   .swiper-slide {
@@ -687,6 +719,9 @@ header {
 .swiper-button-next:hover {
     color: #7EB101;
   }
+  .rules {
+    display: flex;
+  }
 }
 .offerings {
   padding-top: 41px;
@@ -700,7 +735,7 @@ header {
 }
 @media screen and (min-width: 1280px) {
   .offerings {
-    padding-top: 177px;
+    padding-top: 180px;
     padding-bottom: 43px;
   }
 }
@@ -737,12 +772,12 @@ header {
 
 @media screen and (min-width: 768px) {
   .offerings__div {
-    margin-right: 204px;
+    padding-right: 204px;
   }
 }
 @media screen and (min-width: 1280px) {
   .offerings__div {
-    margin-right: 82px;
+    padding-right: 82px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -841,6 +876,11 @@ header {
 .offerings__btn-order:hover, .offerings__btn-order:focus, .offerings__btn-order:active {
   border: 2px solid #597d00;
 }
+@media screen and (min-width: 1280px) {
+  .offerings__btn-order {
+    margin-right: 0;
+  }
+}
 
 .offerings__btn-read {
   padding: 7px 0;
@@ -923,9 +963,7 @@ header {
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 1279px;
-    background-position: center;
     background-image: url(../images/offerings/bgi-tablet.png);
-    background-position: center;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1377,6 +1415,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 }
 @media (min-device-pexel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer {
@@ -1408,7 +1447,6 @@ li {
 }
 @media screen and (min-width: 1280px) {
   .footer {
-    max-width: 1600px;
     min-height: 395px;
     background-image: url("../images/footer/desk-bg.png");
   }
@@ -1482,9 +1520,7 @@ li {
   .footer__list__item {
     color: #2c2c2c;
     text-align: center;
-  }
-  .footer__list__item:nth-child(4) {
-    width: 90px;
+    white-space: nowrap;
   }
 }
 
@@ -1501,6 +1537,10 @@ li {
 
 .footer__link {
   color: #000000;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__link:hover, .footer__link:focus {
+  color: #bbf330;
 }
 
 .footer__subscribe {

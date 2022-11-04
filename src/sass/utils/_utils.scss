@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   font-weight: 400;
@@ -37,9 +41,9 @@ img {
   padding-left: 20px;
   margin: 0 auto;
   @media screen and (min-width: 480px) {
-    width: 480px; 
+    width: 480px;
   }
-  
+
   @media screen and (min-width: 768px) {
     padding-right: 32px;
     padding-left: 32px;
@@ -51,4 +55,3 @@ img {
     width: 1280px;
   }
 }
-
