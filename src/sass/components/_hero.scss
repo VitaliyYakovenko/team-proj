@@ -1,7 +1,7 @@
 
-  
   .swiper{
     width: 100%;
+    background-color: transparent;
   }
   
   @media screen and (max-width: 767px){
@@ -11,9 +11,19 @@
     }
   
   .hero{
-      padding-top: 14px;
-      // padding-bottom: 50px;
-    background-color: #FEFEFE;
+      // padding-top: 14px;
+      padding-top: 60px;
+      padding-bottom: 50px;
+    //  правки
+      @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+        margin-bottom: -140px;
+      }
+      @media screen and (min-width: 1280px) {
+        padding-top: 0;
+        margin-bottom: -180px;
+      }
+      // правки
   }
   
   /* Left Column */
@@ -97,18 +107,20 @@
   max-width: 336px;
   }
     
-  .hero{
+  // .hero{
+  //   display: flex;
+  // }
+  .rules {
     display: flex;
   }
-    
+  
     .swiper{
       width: 336px;
       height: 320px;
       position: relative;
       box-sizing: border-box;
-      background: #FEFEFE;
+      // background-color: transparent;
       margin-top: 149px;
-      
       
     }
     .img-swiper{
@@ -199,7 +211,7 @@
       height: 608px;
       position: relative;
       box-sizing: border-box;
-      background: #FEFEFE;
+      background-color: transparent;
       margin-top: 0;
     }
     
@@ -240,6 +252,8 @@
   .swiper-button-next:hover {
       color: #7EB101;
   }
-  
+   .rules {
+    display: flex;
+   }
   }
   
