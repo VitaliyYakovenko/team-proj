@@ -15,26 +15,26 @@ h2 {
   
   .section-customer {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 110px;
     margin-left: auto;
     margin-right: auto;
   
     background-image: url(.././images/customers/mob-bcg-customer-1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 100% 100%;
   
     @media screen and (min-width: 768px) {
       padding-top: 60px;
-      padding-bottom: 46px;
+      padding-bottom: 134px;
   
       background-image: url(.././images/customers/tab-bcg-customer-1.png);
-      background-position: 50% 30%;
+      // 
     }
   
     @media screen and (min-width: 1280px) {
       padding-top: 100px;
-      padding-bottom: 134px;
+      padding-bottom: 200px;
       padding-left: 16px;
   
       background-image: url(.././images/customers/desk-bcg-customer-1.png);
