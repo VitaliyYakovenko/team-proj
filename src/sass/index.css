@@ -630,21 +630,27 @@ header {
   }
   .swiper-button-prev {
     color: #2C2C2C;
-    left: -10px;
+    margin-left: -20px;
     background: #FEFEFE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     width: 34px;
     height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .swiper-button-next {
     color: #2C2C2C;
     background: #FEFEFE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    right: 5px;
+    margin-right: -20px;
     width: 34px;
     height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -695,7 +701,7 @@ header {
   }
   .swiper-button-prev {
     color: #2C2C2C;
-    left: 30px;
+    margin-left: 20px;
     background: #FEFEFE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -707,7 +713,7 @@ header {
     background: #FEFEFE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    right: 30px;
+    margin-right: 20px;
     width: 40px;
     height: 48px;
   }
