@@ -195,7 +195,7 @@
       */
     }
   }
-  
+  @media screen and (min-width: 1280px){
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
@@ -205,11 +205,18 @@
     margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
     z-index: 10;
     cursor: pointer;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center; 
-     color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    justify-content: center;  */
+    
   }
+}
+@media screen and (min-width: 768px){
+  .swiper-button-prev,
+  .swiper-button-next {
+
+  }
+}
   .swiper-button-prev.swiper-button-disabled,
   .swiper-button-next.swiper-button-disabled {
     opacity: 0.35;
