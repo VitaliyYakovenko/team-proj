@@ -29,11 +29,10 @@
   /* Left Column */
   
   .hero-title {
-    font-family: 'Roboto' sans-serif;
+    // font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: #2C2C2C;
   margin-bottom: 28px;
     // @media screen and (min-width: 768px) {
     //   width: 573px;
@@ -41,12 +40,10 @@
   }
   
   .hero-wrap{
-   
-  font-family: 'Roboto' sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  // font-family: 'Roboto' sans-serif;
+  // font-weight: 400;
+  // font-size: 14px;
   line-height: 1.5;
-  color: #2C2C2C;
   margin-bottom: 28px;
   }
   
@@ -56,13 +53,12 @@
 
   border-radius: 30px;
   cursor: pointer;
-  background-color: #BBF330;   
+  background-color: $style-color;   
       font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
-  color: #2C2C2C;
   padding: 6px 18px;
   border: none;
   font-family: inherit;
@@ -86,7 +82,6 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 1.2;
-    color: #2C2C2C;
   margin-bottom: 30px;
   max-width: 537px;
   }
@@ -103,7 +98,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #2C2C2C;
   margin-bottom: 41px;
   max-width: 336px;
   }
@@ -127,16 +121,15 @@
     .img-swiper{
       // width: 292px;
       // height: 292px;
-      background-color: #FEFEFE;
-      border: 14px solid #FFE550;
+      background-color: $bg-main-color;
+      border: 14px solid $bg-style-color;
       border-radius: 50%;
      
   }
   
   .swiper-button-prev {
-    color: #2C2C2C;
     margin-left: -20px;
-    background: #FEFEFE;
+    background: $bg-main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     width: 34px;
@@ -150,8 +143,7 @@
     
     
     .swiper-button-next {
-        color: #2C2C2C;
-        background: #FEFEFE;
+        background: $bg-main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     margin-right: -20px;
@@ -191,27 +183,24 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 1.2;
-    color: #2C2C2C;
     margin-top: 159px;
     max-width: 502px;
     
     }
     .hero-wrap{
-   
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 1.5;
-      color: #2C2C2C;
       margin-bottom: 40px;
       }
   
   .img-swiper{
       width: 528px;
       height: 528px;
-      background-color: #FEFEFE;
-      border: 26px solid #FFE550;
+      background-color: $bg-main-color;
+      border: 26px solid $bg-style-color;
       border-radius: 50%;
   }
   
@@ -234,9 +223,8 @@
   }
   
   .swiper-button-prev {
-  color: #2C2C2C;
   margin-left: 20px;
-  background: #FEFEFE;
+  background: $bg-main-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   width: 40px;
@@ -245,8 +233,7 @@
   
   
   .swiper-button-next {
-      color: #2C2C2C;
-      background: #FEFEFE;
+  background: $bg-main-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   margin-right: 20px;
@@ -259,7 +246,7 @@
   .swiper-button-next:focus,
   .swiper-button-prev:hover,
   .swiper-button-next:hover {
-      color: #7EB101;
+      color: $footer-link-color;
   }
    .rules {
     display: flex;
