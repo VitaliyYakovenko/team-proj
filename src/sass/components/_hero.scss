@@ -48,8 +48,6 @@
   border-radius: 30px;
   cursor: pointer;
   background-color: $style-color;   
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -73,7 +71,6 @@
   @media screen and (min-width: 768px) {
     
   .hero-title {
-    font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.2;
@@ -97,25 +94,18 @@
   max-width: 336px;
   }
     
-  // .hero{
-  //   display: flex;
-  // }
   .rules {
     display: flex;
   }
   
     .swiper{
       width: 320px;
-      // height: 320px;
       position: relative;
       box-sizing: border-box;
-      // background-color: transparent;
       margin-top: -55px;
       
     }
     .img-swiper{
-      // width: 292px;
-      // height: 292px;
       background-color: $bg-main-color;
       border: 14px solid $bg-style-color;
       border-radius: 50%;
@@ -150,17 +140,8 @@
   }
     
     }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
   @media screen and (min-width: 1280px){
   
   .hero{
@@ -173,8 +154,6 @@
   }
   
   .hero-title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 1.2;
@@ -183,8 +162,6 @@
     
     }
     .hero-wrap{
-      font-family: 'Roboto';
-      font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 1.5;

@@ -551,8 +551,6 @@ header {
   border-radius: 30px;
   cursor: pointer;
   background-color: #bbf330;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -567,7 +565,6 @@ header {
 /* Swiper slide */
 @media screen and (min-width: 768px) {
   .hero-title {
-    font-family: "Roboto" sans-serif;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.2;
@@ -632,8 +629,6 @@ header {
     max-width: 490px;
   }
   .hero-title {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 1.2;
@@ -641,8 +636,6 @@ header {
     max-width: 502px;
   }
   .hero-wrap {
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
