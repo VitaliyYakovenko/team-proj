@@ -560,9 +560,8 @@ header {
   border: none;
   font-family: inherit;
 }
-
-.hero-button:hover {
-  background-color: #B5FF00;
+.hero-button:hover, .hero-button:focus {
+  background-color: #b5ff00;
 }
 
 /* Swiper slide */
@@ -1424,11 +1423,11 @@ li {
 
 .footer-wrap {
   display: flex;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 479px) {
   .footer-wrap {
     width: 100%;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {

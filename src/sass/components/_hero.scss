@@ -28,33 +28,27 @@
   
   /* Left Column */
   
-  .hero-title {
-    // font-family: 'Roboto' sans-serif;
+  .hero-title {  
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
   margin-bottom: 28px;
-    // @media screen and (min-width: 768px) {
-    //   width: 573px;
-    // }
+
   }
   
   .hero-wrap{
-  // font-family: 'Roboto' sans-serif;
-  // font-weight: 400;
-  // font-size: 14px;
   line-height: 1.5;
   margin-bottom: 28px;
   }
   
   
   .hero-button{
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 30px;
   cursor: pointer;
   background-color: $style-color;   
-      font-family: 'Roboto';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -62,11 +56,12 @@
   padding: 6px 18px;
   border: none;
   font-family: inherit;
+  
+  &:hover,
+  &:focus{
+    background-color:$bg-hover-btn-color;
   }
-  .hero-button:hover{
-    background-color:#B5FF00;
-  }
-   
+  } 
   
   
   
