@@ -286,7 +286,8 @@
 
 @media screen and (min-width: 1280px) {
     .overlay {
-        max-width: 1600px;
+        // max-width: 1600px;
+        max-width: 100%;
         background-image: url(../images/offerings/bgi-desktop.png);
     }
 
